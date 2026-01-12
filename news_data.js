@@ -1,12 +1,5 @@
 const news_database = [
     {
-        date: '2026-01-13',
-        category: 'International',
-        title: 'Donald Trump Outlines Global Trade Strategy via New Strategy',
-        content: 'US President Donald Trump has officially proposed a sweeping new tariff framework, aiming to impose a baseline 10-20% tariff on all imports and up to 60% on goods from specific nations. This move is expected to reshape global supply chains, affecting international trade balances and influencing market inflation worldwide. The policy focuses on "Protectionism" to bolster domestic manufacturing.',
-        tags: ['IR', 'Economy', 'Global Trade', 'Tariffs']
-    },
-    {
         date: '2026-01-12',
         category: 'National',
         title: 'India Launches "Amrit Bharat" Mission for Rural Connectivity',
@@ -26,5 +19,13 @@ const news_database = [
         title: 'UN Global Climate Summit 2026 Commences',
         content: 'Leaders from 190 nations gathered to discuss the new carbon tax framework. India proposed a global subsidy for green hydrogen technology.',
         tags: ['Environment', 'International Relations']
-    }
+    },
+   {
+        date: '2026-01-13',
+        category: 'International',
+        title: 'UN Global Climate Summit 2026 Commences',
+        content: 'Leaders from 190 nations gathered to discuss the new carbon tax framework. India proposed a global subsidy for green hydrogen technology.',
+        tags: ['Environment', 'International Relations']
+    }, 
+    
 ];
