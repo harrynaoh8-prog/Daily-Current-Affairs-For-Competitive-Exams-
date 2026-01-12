@@ -1,0 +1,39 @@
+:root {
+    --crimson: #8b0000;
+    --slate: #2f4f4f;
+    --bg: #f4f4f4;
+    --white: #ffffff;
+    --text-main: #1a1a1a;
+}
+
+body { font-family: 'Inter', sans-serif; background: var(--bg); margin: 0; color: var(--text-main); }
+.news-container { display: flex; height: 100vh; overflow: hidden; }
+
+/* Sidebar */
+.date-sidebar { width: 280px; background: var(--slate); color: white; padding: 20px; overflow-y: auto; }
+.date-sidebar h3 { color: #ccc; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+.date-item { padding: 12px; margin: 8px 0; border-radius: 4px; cursor: pointer; transition: 0.3s; border-left: 3px solid transparent; }
+.date-item:hover { background: rgba(255,255,255,0.1); }
+.date-item.active { background: var(--crimson); border-left: 3px solid #ff4d4d; }
+
+/* News Feed */
+.news-feed { flex: 1; overflow-y: auto; padding: 40px; display: flex; flex-direction: column; align-items: center; }
+.news-header { width: 100%; max-width: 800px; border-bottom: 2px solid var(--crimson); padding-bottom: 20px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end; }
+.branding h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2.5rem; color: var(--crimson); }
+
+/* News Cards */
+.category-block { width: 100%; max-width: 800px; margin-bottom: 40px; }
+.cat-title { background: var(--slate); color: white; display: inline-block; padding: 4px 12px; font-size: 0.8rem; font-weight: bold; margin-bottom: 15px; }
+.news-card { background: var(--white); padding: 25px; border-radius: 2px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 20px; }
+.news-card h2 { font-family: 'Playfair Display', serif; margin-top: 0; line-height: 1.3; }
+.news-card p { line-height: 1.6; color: #444; }
+.tags { margin-top: 15px; }
+.tag { background: #eee; font-size: 0.7rem; padding: 3px 8px; border-radius: 3px; margin-right: 5px; color: var(--crimson); font-weight: bold; }
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .news-container { flex-direction: column; }
+    .date-sidebar { width: 100%; height: auto; padding: 10px; }
+    .date-picker { display: flex; overflow-x: auto; gap: 10px; }
+    .date-item { white-space: nowrap; margin: 0; }
+}
